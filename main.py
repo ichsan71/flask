@@ -40,7 +40,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
 
 # @app.route('/api/users', methods=['GET'])
 # def get_users_by_email():
