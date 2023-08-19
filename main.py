@@ -38,6 +38,10 @@ users = [
 ]
 
 
+@app.route('/')
+def index():
+    return "Hello, World!"
+
 @app.route('/api/users', methods=['GET'])
 def get_users_by_email():
     email = request.args.get('email')
